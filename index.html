@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name = "format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="libs/microtipe-css/microtip.min.css">
+	<link rel="stylesheet" href="libs/font-avesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="sass/main.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+	<div class="site-wrap">
+		<header class="header">
+			<div class="container">
+				<div class="header-wrapper">
+					<div class="header-wrapper__wrp">
+						<div class="header-wrapper__logo">
+							<a href="/"><img src="img/header/logo.png" alt="header-logo"></a>
+						</div>
+						<form action="#" method="GET">
+							<input type="search" class="header-wrapper__form-control" placeholder="Поиск">
+						</form>
+					</div>
+					<div class="header-wrapper__switch-english" aria-label="Сменить на English" data-microtip-position="right" data-microtip-size="medium" role="tooltip">
+						<a href="#">Switch to English</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	
+		<main class="main">
+			<div class="container">
+				<div class="main-wrapper">
+					<div class="main-wrapper__left">
+						<div class="main-wrapper__content">
+							<h1 class="main-wrapper__title">ВКонтакте для мобильных устройств</h1>
+							<p class="main-wrapper__description">Установите официальное мобильное приложение ВКонтакте и
+								 оставайтесь в курсе новостей Ваших друзей, где бы Вы ни находились.</p>
+						</div>
+						<div class="main-wrapper__picture">
+							<img src="img/main-bg-phone.png" alt="phone-bg">
+						</div>
+					</div>
+					<div class="main-wrapper__right">
+						<div class="main-wrapper__auth">
+							<form action="pages/myPage.html">
+								<div class="main-wrapper__inp-wrp">
+									<input type="text" class="main-wrapper__form-control" placeholder="Имя">
+								</div>
+								<div class="main-wrapper__inp-wrp">
+									<input type="password" class="main-wrapper__form-control" placeholder="Пароль">
+								</div>
+								<button type="submit" class="main-wrapper__door">Войти</button>
+							</form>
+						</div>
+						<div class="main-wrapper__reg">
+							<h3 class="main-wrapper__headline">Впервые ВКонтакте?</h3>
+							<span class="main-wrapper__subtitle">Моментальная регистрация</span>
+							<form action="#" method="POST">
+								<div class="main-wrapper__inp-wrp">
+									<input type="text" class="main-wrapper__form-control" placeholder="Ваше Имя">
+								</div>
+								<div class="main-wrapper__inp-wrp">
+									<input type="password" class="main-wrapper__form-control" placeholder="Придумайте Пароль">
+								</div>
+								<div class="main-wrapper__data" aria-label="Выберите дату вашего рождения!" data-microtip-position="right" data-microtip-size="medium" role="tooltip">Дата рождения <span>?</span></div>
+								<div class="main-wrapper__select-wrp">
+										<select name="day" id="day"></select>
+										<select name="month" id="month"></select>
+										<select name="year" id="year"></select>
+								</div>
+								<button type="submit" class="main-wrapper__door main-wrapper__registration" aria-label="Следующее заполнениие продолжите уже в своем кабинете!" data-microtip-position="bottom" data-microtip-size="medium" role="tooltip">Продолжить регистрацию</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+		
+
+		<script src="js/script.js"></script>
+
+		
+	
+
+</body>
+</html>

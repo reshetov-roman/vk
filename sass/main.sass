@@ -1,0 +1,573 @@
+// variable_COLOR 
+$defaul_color: #4A76A8
+$link_color: #285473
+$color_grey: #808080
+$border_color: #E7E8EC
+
+html
+	font-size: 100%
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	font-family: 'Source Sans Pro', sans-serif
+	background: #EDEEF0
+	font-size: 14px
+	
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	&:hover
+		text-decoration: underline
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+strong
+	display: inline-block
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+nav
+	position: fixed
+
+.hidden
+	display: none
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	max-width: 970px
+	width: 100%
+
+// start header
+
+.header
+	background: $defaul_color
+	padding: 7px 0
+	box-shadow: 0 1px 3px 0 $defaul_color
+	z-index: 1000
+	width: 100%
+	position: fixed
+	&-wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&__wrp
+			display: flex
+			justify-content: space-between
+			align-items: center
+			max-width: 400px
+			width: 100%
+		&__logo
+			max-width: 30px
+			width: 100%
+		&__form-control
+			width: 230px
+			outline: none
+			border-radius: 25px
+			border: none
+			padding: 5px 10px
+			font-size: 14px
+			background: #224B7A
+			&::-webkit-input-placeholder
+				color: #81ADC3
+		&__switch-english
+			a
+				color: #fff
+				text-decoration: none
+				font-size: 14px
+				font-weight: 600
+// end header 
+	
+// main
+.main
+	padding-top: 110px
+	min-height: 100vh
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: nowrap
+		&__left
+			text-align: center
+			width: 54%
+		&__content
+			margin-bottom: 20px
+		&__title
+			font-size: 22px
+			font-weight: 600
+			margin-bottom: 10px
+		&__description
+			font-size: 14px
+			line-height: 20px
+		&__picture
+			max-width: 400px
+			width: 100%
+			margin: 0 auto
+		&__right
+			// Правый блок
+		&__auth
+			padding: 25px
+			background: #fff
+			border-radius: 4px
+		&__form-control
+			width: 270px
+			padding: 7px 10px
+			outline: none
+			border: none
+			border-radius: 3px
+			font-size: 14px
+			border: 1px solid #D3D9DE
+			margin-bottom: 12px
+		&__door
+			background: $defaul_color
+			color: #fff
+			border-radius: 4px
+			width: 100%
+			padding: 8px 0
+			transition: .3s
+			&:hover
+				transition: .3s
+				transform: scale(0.98)
+				background: #1e6fb1
+		&__reg
+			margin-top: 30px
+			padding: 25px
+			background: #fff
+			border-radius: 4px
+			text-align: center
+		&__headline
+			font-weight: 600
+			font-size: 21px
+			line-height: 17px
+		&__subtitle
+			font-size: 14px
+			margin-bottom: 15px
+		&__registration
+			background: #5FB053
+			transition: .3s
+			&:hover
+				transition: .3s
+				background: #63c055
+		&__data
+			max-width: 153px
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-around
+			margin-bottom: 10px
+			font-weight: 600
+			span
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 20px
+				height: 20px
+				font-weight: 400
+				border-radius: 50%
+				box-shadow: 0 0 3px 0 #000
+				font-size: 13px
+				transition: .3s
+				&:hover
+					transition: .3s
+					box-shadow: 0 0 5px 0 #000
+		&__select-wrp
+			margin-bottom: 15px
+			select
+				width: 100%
+				padding: 4px 0
+				font-size: 14px
+				border: none
+				outline: none
+				box-shadow: 0 0 1.2px 0 #000
+				margin-bottom: 10px
+				background: #2f9dbc10
+				
+// end main
+
+// start mypage
+
+.myPage
+	margin-top: 55px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&__left
+			margin-right: 165px
+		&__link
+			color: $link_color
+			padding: 5px 5px 5px 25px
+			width: 146px
+			border-radius: 3px
+			position: relative
+			&:hover
+				background: #9e9e9e2a
+				text-decoration: none
+			i
+				position: absolute
+				left: 5px
+				font-size: 17px
+				opacity: .5
+		&__center
+			max-width: 230px
+			width: 100%
+			margin-right: 15px
+		&__avatar
+			padding: 15px
+			border-radius: 3px
+			background: #fff
+			box-shadow: 0 0 3px 0 #bebcbc
+		&__photo
+			border-radius: 3px
+			margin-bottom: 12px
+			img
+				width: 200px
+				height: 200px
+				object-fit: cover
+				border-radius: 3px
+		&__edit
+			color: $link_color
+			display: block
+			text-align: center
+			background: #E5EBF1
+			border-radius: 3px
+			padding: 6px 0
+			&:hover
+				background: #dee5eb
+				text-decoration: none
+		&__friends
+			margin-top: 15px
+			border-radius: 3px
+			background: #fff
+			box-shadow: 0 0 3px 0 #bebcbc
+			padding: 10px 15px 
+			margin-bottom: 15px
+		&__top
+			max-width: 105px
+			width: 100%
+			font-size: 13px
+			display: flex
+			justify-content: space-between
+			margin-bottom: 15px
+			a
+				text-decoration: none
+				color: $link_color
+		&__count
+			color: #7a7878
+		&__people
+			text-align: center
+			cursor: pointer
+			margin-bottom: 10px
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6)
+				margin-bottom: 0
+			img
+				max-width: 50px
+				min-height: 50px
+				border-radius: 50%
+		&__wrp-piple
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+		&__name
+			margin-top: 5px
+			font-size: 12px
+			display: block
+			color: $link_color
+		&__wrp-subscriptions
+			padding: 15px
+			border-radius: 3px
+			background: #fff
+			box-shadow: 0 0 3px 0 #bebcbc
+		&__img
+			margin-right: 10px
+		&__subscription
+			display: flex
+			align-items: center
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0
+			img
+				max-width: 50px
+				min-height: 50px
+				border-radius: 50%
+		&__title
+			display: block
+			color: $link_color
+			text-align: left
+			font-size: 14px
+		&__subtitle
+			font-size: 11px
+		&__right
+			max-width: 520px
+			width: 100%
+		&__info
+			background: #fff
+			border-radius: 3px
+			box-shadow: 0 0 3px 0 #bebcbc
+		&__top-header
+			padding: 15px
+			padding-bottom: 15px
+			border-bottom: 1px solid $border_color
+		&__wrp-top
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&__name-lastname
+			font-size: 19px
+		&__data-time
+			font-size: 12.5px
+			font-weight: 600
+			color: $color_grey
+			i
+				font-size: 14px
+		&__status
+			color: $color_grey
+			font-size: 12.5px
+			font-weight: 600
+			padding: 2px 0
+			display: block
+			&:hover
+				background: #ececec9d
+				cursor: pointer
+		&__top-main
+			padding: 15px
+		&__wrp-fix-info
+			max-width: 370px
+			width: 100%
+			display: flex
+			justify-content: space-between
+			margin-bottom: 8px
+		&__birthday
+			color: $color_grey
+		&__date-birth
+			padding-right: 4px
+			color: $defaul_color
+		&__sity
+			color: $color_grey
+		&__sity-name
+			color: $defaul_color
+		&__hide-activ
+			padding: 8px 0
+			padding-left: 47px
+			text-align: center
+			display: block
+			border-radius: 3px
+			color: $defaul_color
+			&:hover
+				cursor: pointer
+				background: #ececec9d
+		&__hide-block
+		&__show-block
+			display: none
+		&__hide-activ
+			margin-bottom: 10px
+		&__wrp-body
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 12px
+		&__item
+			&:hover
+				.myPage-wrapper__edit-info
+					display: block
+		&__nuts
+			white-space: nowrap
+			padding-right: 5px
+		&__line
+			width: 100%
+			height: 1px
+			background: $border_color
+		&__edit-info
+			color: $color_grey
+			padding-left: 5px
+			display: none
+		&__top-footer
+			border-top: 1px solid $border_color
+		&__top-wrp-count
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-wrap: wrap
+		&__top-counter
+			padding: 15px 0
+			&:hover
+				.myPage-wrapper__label
+					color: $defaul_color
+		&__top-page-link
+			text-decoration: none!important
+			text-align: center
+		&__count
+			color: $defaul_color
+			font-size: 21px
+			font-weight: 600
+		&__label
+			color: $color_grey
+			font-size: 14px
+		&__my-photo
+			margin-top: 15px
+		&__top-photo
+			padding: 15px
+			background: #fff
+			border-radius: 3px
+			box-shadow: 0 0 3px 0 #bebcbc
+		&__link-no-decoration
+			color: #000
+			text-decoration: none!important
+			margin-bottom: 15px
+		&__count1
+			color: $color_grey
+		&__wrp-flex
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		&__itm
+			position: relative
+			overflow: hidden
+			img
+				width: 120px
+				height: 120px
+				object-fit: cover
+				transition: .3s
+				&:hover
+					transition: .3s
+					transform: scale(1.1)
+			
+				
+// myMessages
+
+.myMessages
+	margin-top: 55px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		&__center
+			width: 81.7%
+		&__messages-list
+			box-shadow: 0 0 3px 0 #bebcbc
+			border-radius: 3px
+			background: #fff
+		&__item
+			padding: 15px
+			border-bottom: 1px solid $border_color
+			cursor: pointer
+			border-radius: 3px
+			&:hover
+				background: #e0dbdb33
+				i
+					transition: 1s
+					transform: rotate(0deg)
+					color: #808080
+		&__wrd-display-mess
+			display: flex
+			align-items: center
+		&__avatar-left
+			margin-right: 15px
+			img
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				object-fit: cover
+		&__content
+			width: 95%
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 5px
+		&__wrp-name-time
+			width: 100%
+			line-height: 25px
+			position: relative
+			i
+				position: absolute
+				right: 0
+				top: 5px
+				color: #fff
+				font-size: 13px
+				&:hover
+					color: tomato
+		&__name
+			font-weight: 600
+		&__time
+			font-weight: 600
+			color: $color_grey
+		&__message-window-last
+			width: 97%
+			background: #ececec75
+			border-radius: 3px
+			padding: 3px 8px
+	
+
+
+
+				
+				
+			
+		
+
+// end mypage
+
+@import "_media"
